@@ -17,8 +17,23 @@ const Skills: React.FC = () => {
       <div className="container">
         <h2 className="text-center fw-bold mb-5 gradient-text">My Skills</h2>
 
-        <div className="row justify-content-center">
-          <div className="col-lg-8 col-md-10">
+        
+
+
+        <div className="row justify-content-center g-2">
+            {skills.map((skill, index) => (
+                 <div className="col-md-4">
+                  <div className="skill-card">
+                      <i className="bi bi-code-slash"></i>
+                      <h5>{skill.name}</h5>
+                      <div className="skill-bar" style={{ "--fill": `${skill.level}%` } as React.CSSProperties}>
+                          <div className="skill-bar-fill"></div>
+                      </div>
+                  </div>
+              </div>
+            ))}
+                 
+          {/* <div className="col-lg-8 col-md-10">
             <div className="skills-wrapper p-4 rounded-4 shadow-lg">
               {skills.map((skill, index) => (
                 <div key={index} className="mb-4">
@@ -39,7 +54,7 @@ const Skills: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="skills-overlay"></div>
