@@ -23,10 +23,10 @@ const Home: React.FC = () => {
             Always exploring the latest technologies and building meaningful digital experiences.
           </p>
           <div>
-            <a href="#projects" className="btn btn-primary me-3 px-4 py-2">
+            <a href="#projects" className="btn btn-primary m-2 px-4 py-2">
               View Projects
             </a>
-            <a href="#contact" className="btn btn-outline-light px-4 py-2">
+            <a href="#contact" className="btn btn-outline-light m-2 px-4 py-2">
               Get in Touch
             </a>
           </div>

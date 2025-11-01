@@ -36,27 +36,27 @@ const Header: React.FC = () => {
         >
           <ul className="navbar-nav gap-3">
              <li className="nav-item">
-              <a href="#home" className="nav-link text-white">
+              <a href="#home" className="nav-link text-white" onClick={closeMenu}>
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-link text-white">
+              <a href="#about" className="nav-link text-white" onClick={closeMenu}>
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a href="#skills" className="nav-link text-white">
+              <a href="#skills" className="nav-link text-white" onClick={closeMenu}>
                 Skills
               </a>
             </li>
             <li className="nav-item">
-              <a href="#projects" className="nav-link text-white">
+              <a href="#projects" className="nav-link text-white" onClick={closeMenu}>
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contact" className="nav-link text-white">
+              <a href="#contact" className="nav-link text-white" onClick={closeMenu}>
                 Contact
               </a>
             </li>
