@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <div className="container">
         {/* Logo / Brand */}
         <Link to="/" className="navbar-brand fw-bold fs-4 text-primary">
-          Ishwar <span className="text-light">Portfolio</span>
+          ISHWAR <span className="text-light">PORTFOLIO</span>
         </Link>
 
         {/* Toggle button for mobile */}
