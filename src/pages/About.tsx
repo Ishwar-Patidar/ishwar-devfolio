@@ -1,4 +1,5 @@
 import React from "react";
+import myResume from "../assets/pdf/ishwar_resume.pdf";
 
 const About: React.FC = () => {
   return (
@@ -34,7 +35,7 @@ const About: React.FC = () => {
 
             <ul className="about-list mb-4">
               <li>
-                <strong>Experience:</strong> 3+ Years
+                <strong>Experience:</strong> 2+ Years
               </li>
               <li>
                 <strong>Specialty:</strong> Full Stack Development
@@ -47,7 +48,7 @@ const About: React.FC = () => {
             <a href="#contact" className="btn btn-primary px-4 py-2 me-3">
               Hire Me
             </a>
-            <a href="/assets/ishwar_resume.pdf" className="btn btn-outline-light px-4 py-2" download>
+            <a href={myResume} className="btn btn-outline-light px-4 py-2" download>
               Download CV
             </a>
           </div>
