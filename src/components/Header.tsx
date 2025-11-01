@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <div className="container">
         {/* Logo / Brand */}
         <Link to="/" className="navbar-brand fw-bold fs-4 text-primary">
-          Ishwar<span className="text-dark">Portfolio</span>
+          Ishwar <span className="text-light">Portfolio</span>
         </Link>
 
         {/* Toggle button for mobile */}
@@ -35,30 +35,30 @@ const Header: React.FC = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav gap-3">
-            <li className="nav-item">
-              <NavLink to="/" onClick={closeMenu} className="nav-link">
+             <li className="nav-item">
+              <a href="#home" className="nav-link text-white">
                 Home
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink to="/about" onClick={closeMenu} className="nav-link">
+              <a href="#about" className="nav-link text-white">
                 About
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink to="/projects" onClick={closeMenu} className="nav-link">
-                Projects
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/skills" onClick={closeMenu} className="nav-link">
+              <a href="#skills" className="nav-link text-white">
                 Skills
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" onClick={closeMenu} className="nav-link">
+              <a href="#projects" className="nav-link text-white">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" className="nav-link text-white">
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>

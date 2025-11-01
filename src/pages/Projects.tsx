@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
   );
 
   return (
-    <div className="projects-section py-5">
+    <section className="projects-section py-5" id="projects">
       <div className="container">
         <h2 className="text-center mb-5 section-title">Projects</h2>
 
@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

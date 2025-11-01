@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <div className="col-md-5 text-center">
             <div className="about-img-wrapper mx-auto">
               <img
-                src="/images/ip.jpeg"
+                src="/images/profile.jpeg"
                 alt="About Ishwar"
                 className="img-fluid rounded-4 shadow-lg"
               />

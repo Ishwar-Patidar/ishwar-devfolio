@@ -20,7 +20,7 @@ const ProjectDetail: React.FC = () => {
   return (
     <div className="project-detail py-5">
       <div className="container">
-        <Link to="/projects" className="btn btn-outline-accent mb-4">
+        <Link to="/" className="btn btn-outline-accent mb-4">
           ← Back to Projects
         </Link>
 

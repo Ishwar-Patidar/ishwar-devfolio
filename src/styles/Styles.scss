@@ -14,22 +14,30 @@
   transition: color 0.2s ease-in-out;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: #007bff !important;
   text-decoration: none;
 }
 
 /* Mobile menu animation */
 @media (max-width: 992px) {
+  .nav-link {
+  color: #000000 !important;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
   .navbar-collapse {
     background-color: white;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
   }
+  .navbar-toggler-icon {
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 4px;
+  }
 }
-
 
 // --- Home Page Styling ---
 /* --- Hero Section --- */
@@ -42,6 +50,7 @@
   background: linear-gradient(135deg, #1e293b, #0f172a);
   overflow: hidden;
   color: #fff;
+  padding: 100px;
 }
 
 .hero-overlay {
@@ -324,32 +333,9 @@
 
 // --- Contact Section --- //
 .contact-section {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  padding: 100px 0;
-}
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #00e1a1, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-
-.contact-section p {
-  text-align: center;
-  color: #cbd5e1;
-  margin-bottom: 60px;
-}
-
-/* --- Contact Info --- */
-.contact-section {
   background: linear-gradient(135deg, #0a0f1d, #111c3a, #162447, #1b2a60);
   color: #fff;
-  padding: 100px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -508,6 +494,7 @@ section {
 
 // ProjectDetail Page Styling
 .project-detail {
+  margin-top: 48px;
   background-color: #0a192f;
   color: #ccd6f6;
   min-height: 100vh;
