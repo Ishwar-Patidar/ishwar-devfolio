@@ -1,5 +1,6 @@
 import React from "react";
 import myResume from "../assets/pdf/ishwar_resume.pdf";
+import profileImg from "../assets/images/profile.png";
 
 const About: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const About: React.FC = () => {
           <div className="col-md-5 text-center">
             <div className="about-img-wrapper mx-auto">
               <img
-                src="/images/profile.jpeg"
+                src={profileImg}
                 alt="About Ishwar"
                 className="img-fluid rounded-4 shadow-lg"
               />

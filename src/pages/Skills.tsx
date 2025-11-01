@@ -3,11 +3,11 @@ import React from "react";
 const Skills: React.FC = () => {
   const skills = [
     { name: "ReactJS", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "NestJS", level: 80 },
+    { name: "TypeScript", level: 80 },
+    { name: "NestJS", level: 90 },
     { name: "NodeJS", level: 80 },
-    { name: "MongoDB", level: 75 },
-    { name: "MySQL", level: 70 },
+    { name: "MongoDB", level: 85 },
+    { name: "MySQL", level: 85 },
     { name: "HTML / CSS / Bootstrap", level: 90 },
     { name: "Git / GitHub", level: 85 },
   ];
@@ -16,9 +16,6 @@ const Skills: React.FC = () => {
     <section className="skills-section py-5" id="skills">
       <div className="container">
         <h2 className="text-center fw-bold mb-5 gradient-text">My Skills</h2>
-
-        
-
 
         <div className="row justify-content-center g-2">
             {skills.map((skill, index) => (

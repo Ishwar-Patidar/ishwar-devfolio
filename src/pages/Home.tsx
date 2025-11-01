@@ -1,4 +1,5 @@
 import React from "react";
+import profileImg from "../assets/images/profile.png";
 
 const Home: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const Home: React.FC = () => {
         <div className="hero-content mx-auto">
           <div className="profile-pic mb-4">
             <img
-              src="/images/ip.jpeg"
+              src={profileImg}
               alt="Ishwar Patidar"
               className="img-fluid rounded-circle shadow-lg"
             />

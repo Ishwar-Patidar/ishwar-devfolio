@@ -15,21 +15,21 @@ const Contact: React.FC = () => {
             <div className="info-card">
               <i className="bi bi-envelope-fill"></i>
               <h5>Email</h5>
-              <p>ishwar.dev@example.com</p>
+              <p>ishwarpatidar015@gmail.com</p>
             </div>
 
             <div className="info-card">
               <i className="bi bi-telephone-fill"></i>
               <h5>Phone</h5>
-              <p>+91 98765 43210</p>
+              <p>+91 9827263782</p>
             </div>
 
             <div className="info-card">
               <i className="bi bi-linkedin"></i>
               <h5>LinkedIn</h5>
               <p>
-                <a href="https://linkedin.com/in/ishwar" target="_blank" rel="noreferrer">
-                  linkedin.com/in/ishwar
+                <a href="https://www.linkedin.com/in/ishwar-patidar-6b42a6244/" target="_blank" rel="noreferrer">
+                  linkedin.com/in/ishwar-patidar-6b42a6244
                 </a>
               </p>
             </div>
