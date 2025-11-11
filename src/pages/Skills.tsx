@@ -19,7 +19,7 @@ const Skills: React.FC = () => {
 
         <div className="row justify-content-center g-2">
             {skills.map((skill, index) => (
-                 <div className="col-md-4">
+                 <div className="col-md-4" key={index}>
                   <div className="skill-card">
                       <i className="bi bi-code-slash"></i>
                       <h5>{skill.name}</h5>
