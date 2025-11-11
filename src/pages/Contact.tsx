@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const Contact: React.FC = () => {
+
+  const [result, setResult] = useState<any>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const onSubmit = async (event: any) => {
+    event.preventDefault();
+    setIsLoading(true);
+    try {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "058cc91d-878b-477e-a1b1-61c01826d384");
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        toast.success("Message sent successfully ✅");
+        const data = await response.json();
+        setResult(data.success && data?.message || "Success!" );
+      } else {
+        toast.error("Failed to send message ❌");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResult("An error occurred. Please try again later.");
+    } finally {
+      setIsLoading(false);
+      event.target.reset();
+    }
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="container">
@@ -37,11 +70,11 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className="col-md-7">
-            <form className="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea rows={5} placeholder="Your Message"></textarea>
-              <button type="submit">Send Message</button>
+            <form className="contact-form" onSubmit={onSubmit}>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea rows={5} name="message" placeholder="Your Message"></textarea>
+              <button type="submit" disabled = {isLoading}>{isLoading ? "Sending..." : "Send Message"}</button>
             </form>
           </div>
         </div>

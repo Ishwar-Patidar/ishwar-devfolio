@@ -3,12 +3,12 @@ import React from "react";
 const Skills: React.FC = () => {
   const skills = [
     { name: "ReactJS", level: 90 },
-    { name: "TypeScript", level: 80 },
     { name: "NestJS", level: 90 },
     { name: "NodeJS", level: 80 },
+    { name: "JavaScript / TypeScript", level: 80 },
+    { name: "HTML / CSS / Bootstrap", level: 90 },
     { name: "MongoDB", level: 85 },
     { name: "MySQL", level: 85 },
-    { name: "HTML / CSS / Bootstrap", level: 90 },
     { name: "Git / GitHub", level: 85 },
   ];
 

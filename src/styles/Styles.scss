@@ -337,6 +337,11 @@
   color: #fff;
   padding: 80px 0;
   overflow: hidden;
+
+  button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 }
 
 .contact-section h2 {

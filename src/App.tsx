@@ -7,11 +7,13 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <Router>
       <Header />
+      <Toaster position="top-right" />
       {/* ✅ Main single-page layout */}
       <Routes>
         <Route
