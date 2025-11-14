@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
               <div key={project.id} className="col-md-6 col-lg-4 mb-4">
                 <div className="project-card p-4 h-100">
                   <h4 className="project-title">{project.title}</h4>
-                  <p className="text-muted mb-2">{project.company}</p>
+                  <p className="mb-2">{project.company}</p>
                   <p className="project-short">{project.shortDesc}</p>
                   <div className="tech-list mb-3">
                     {project.techStack.map((tech, index) => (

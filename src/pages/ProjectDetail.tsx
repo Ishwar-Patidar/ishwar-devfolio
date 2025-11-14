@@ -28,7 +28,7 @@ const ProjectDetail: React.FC = () => {
           <h2 className="project-title mb-3">{project.title}</h2>
 
           {project.company && (
-            <p className="text-muted mb-3">
+            <p className="mb-3">
               <strong>Company:</strong> {project.company}
             </p>
           )}

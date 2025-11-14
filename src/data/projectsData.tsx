@@ -19,9 +19,10 @@ export const projectsData: Project[] = [
     type: "company",
     company: "Devnion Technologies Pvt. Ltd.",
     techStack: ["ReactJS", "NestJS", "MySQL", "JWT"],
-    shortDesc: "A platform for managing garage operations, services, and stock.",
+    shortDesc: "Cloud-based showroom and service center management software.",
     fullDesc:
-      "Developed a full-stack garage management system handling service records, spare part stock, and billing automation. Integrated real-time notifications and JWT-based authentication for secure access.",
+      " Vahan Buddy is a complete digital solution designed for garages, mechanics, and multi-outlet automobile workshops to manage daily operations efficiently.It replaces manual registers with a clean, automated, cloud-based system that handles everything from job cards to inventory and customer billing"
+      // Developed a full-stack garage management system handling service records, spare part stock, and billing automation. Integrated real-time notifications and JWT-based authentication for secure access.",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const projectsData: Project[] = [
     id: 3,
     title: "Training Center",
     type: "company",
+    company: "Devnion Technologies Pvt. Ltd.",
     techStack: ["ReactJS", "NestJS", "MongoDB"],
     shortDesc:
       "A real-time task tracking and assignment app for teams and managers.",
