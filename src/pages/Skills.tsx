@@ -1,16 +1,7 @@
 import React from "react";
+import { SkillsData } from "../data/Skills";
 
 const Skills: React.FC = () => {
-  const skills = [
-    { name: "ReactJS", level: 90 },
-    { name: "NestJS", level: 90 },
-    { name: "NodeJS", level: 80 },
-    { name: "JavaScript / TypeScript", level: 80 },
-    { name: "HTML / CSS / Bootstrap", level: 90 },
-    { name: "MongoDB", level: 85 },
-    { name: "MySQL", level: 85 },
-    { name: "Git / GitHub", level: 85 },
-  ];
 
   return (
     <section className="skills-section py-5" id="skills">
@@ -18,18 +9,23 @@ const Skills: React.FC = () => {
         <h2 className="text-center fw-bold mb-5 gradient-text">My Skills</h2>
 
         <div className="row justify-content-center g-2">
-            {skills.map((skill, index) => (
-                 <div className="col-md-4" key={index}>
-                  <div className="skill-card">
-                      <i className="bi bi-code-slash"></i>
-                      <h5>{skill.name}</h5>
-                      <div className="skill-bar" style={{ "--fill": `${skill.level}%` } as React.CSSProperties}>
-                          <div className="skill-bar-fill"></div>
-                      </div>
+          {SkillsData?.map((skill, index) => (
+            <div className="col-md-4" key={index}>
+              <div className="skill-card">
+                {/* <i className="bi bi-code-slash"></i> */}
+                <div className="image-wrapper">
+                  <div className="d-flex align-items-center justify-content-center p-2">
+                    <img src={skill.imgPath} alt={skill.name} className="img skill-icon" height={100} width={100} />
                   </div>
+                </div>
+                <h5>{skill.name}</h5>
+                <div className="skill-bar" style={{ "--fill": `${skill.level}%` } as React.CSSProperties}>
+                  <div className="skill-bar-fill"></div>
+                </div>
               </div>
-            ))}
-                 
+            </div>
+          ))}
+
           {/* <div className="col-lg-8 col-md-10">
             <div className="skills-wrapper p-4 rounded-4 shadow-lg">
               {skills.map((skill, index) => (
