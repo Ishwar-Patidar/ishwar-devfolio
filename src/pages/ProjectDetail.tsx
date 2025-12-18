@@ -20,9 +20,11 @@ const ProjectDetail: React.FC = () => {
   return (
     <div className="project-detail py-5">
       <div className="container">
+        <div style={{ maxWidth: 900 }} className="mx-auto">
         <Link to="/" className="btn btn-outline-accent mb-4">
           ← Back to Projects
         </Link>
+        </div>
 
         <div className="detail-card p-4">
           <h2 className="project-title mb-3">{project.title}</h2>
